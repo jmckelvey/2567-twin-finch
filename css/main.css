@@ -1,8 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons 
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure
+	3.2 - Works Section 
+	3.3 - About Section
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -12,8 +31,32 @@
 	box-sizing: border-box;	
 }
 
+/*---------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+
+/*-------- 1.1 - HEADINGS ------------------------------------ */
+
+/*-------- 1.2 - BODY ---------------------------------------- */
+
+/*-------- 1.3 - BUTTONS ------------------------------------- */
+
+/*---------------------------------------------------------------
+2.0 - NAVIGATION MENU
+-------------------------------------------------------------- */
+
+/*-------- 2.1 - MAIN MENU ----------------------------------- */
+
+/*-------- 2.2 - FOOTER MENU --------------------------------- */
+
+/*--------------------------------------------------------------
+3.0 - CONTENT
+-------------------------------------------------------------- */
+
+/*-------- 3.1 - SITE STRUCTURE ------------------------------ */
+
 .wrapper {
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -23,18 +66,150 @@
 	display: table;	
 }
 
-img {
-	max-width: 100%;	
-}
-
 [class*='col-'] {
 	float: left;
-	margin: 5px 0 5px 1.6%;
+	margin: 5px 0 5px 0;
+	padding-right: 10px;
 }
 
 [class*='col-']:first-of-type {
 	margin-left: 0;
 } 
+
+/* WIDTHS */  
+
+.col-1-1 {
+	width: 100%;	
+}
+
+.col-1-2 {
+	width: 50%;
+}
+
+.col-1-3 {
+	width: 33.33%; 
+}
+
+.col-1-4, .col-1-4-sm {
+	width: 25%; 
+}
+
+.col-1-5 {
+  	width: 20%;
+}
+
+.col-1-6, .col-1-6-sm {
+  	width: 16.666666666666666667%;
+}
+
+.col-1-7 {
+  	width: 14.28%;
+}
+
+.col-1-8 {
+	width: 12.5%; 
+}
+
+.col-1-9 {
+	width: 11.1%; 
+}
+
+.col-1-10 {
+	width: 10%;
+}
+
+.col-1-11 {
+	width: 9.09%; 
+}
+
+.col-1-12 {
+	width: 8.33%; 
+}
+
+
+/* FRACTION WIDTHS */
+
+.col-1-3-lg {
+	width: 66.666666666666666667%; 
+}
+
+.col-1-4-lg {
+	width: 75%; 
+}
+
+.col-1-5-sm {
+  	width: 40%;
+}
+
+.col-1-5-lg {
+  	width: 60%; 
+}
+
+.col-1-6-lg {
+  	width: 83.3333333333333333333%;
+}
+
+.col-1-7-sm {
+  	width: 28.56%;
+}
+
+.col-1-7-lg {
+  	width: 71.4%;
+}
+
+.col-1-8-sm {
+	width: 37.5%;
+}
+
+.col-1-8-lg {
+	width: 62.5%; 
+}
+
+.col-1-9-sm {
+	width: 44.4%; 
+}
+
+.col-1-9-lg {
+	width: 55.5%; 
+}
+
+.col-1-10-sm {
+	width: 30%;
+}
+
+.col-1-10-lg {
+	width: 70%; 
+}
+
+.col-1-11-lg {
+	width: 63.63%; 
+}
+
+.col-1-11-sm {
+	width: 36.36%; 
+}
+
+.col-1-12-sm {
+	width: 41.65%; 
+}
+
+.col-1-12-lg {
+	width: 58.31%; 
+}
+
+/*-------- 3.2 - SECTION ONE --------------------------------- */
+
+/*-------- 3.3 - SECTION TWO --------------------------------- */
+
+/*--------------------------------------------------------------
+4.0 - MEDIA
+-------------------------------------------------------------- */
+
+/*--------------------------------------------------------------
+5.0 - UTILITY
+-------------------------------------------------------------- */
+
+/*-------- 5.1 - BACKGROUND COLORS --------------------------- */
 
 .gray {
 	background-color: #ccc;	
@@ -46,128 +221,63 @@ img {
 	height: 50px;
 }
 
-
-/* WIDTHS */  
-
-.col-1-1 {
-	width: 100%;	
+.wrapper {
+	background-color: #58595B;	
 }
 
-.col-1-2 {
-	width: 49.2%;
+.row {
+	background-color: #6D6E70;	
 }
 
-.col-1-3 {
-	width: 32.26%; 
-}
-
-.col-1-4, .col-1-4-sm {
-	width: 23.8%; 
-}
-
-.col-1-5 {
-  	width: 18.72%;
-}
-
-.col-1-6, .col-1-6-sm {
-  	width: 15.33%;
-}
-
-.col-1-7 {
-  	width: 12.91%;
-}
-
-.col-1-8 {
-	width: 11.1%; 
-}
-
-.col-1-9 {
-	width: 9.68%; 
-}
-
-.col-1-10 {
-	width: 8.56%;
-}
-
-.col-1-11 {
-	width: 7.63%; 
-}
-
-.col-1-12 {
-	width: 6.86%; 
+body > header {
+	background-color: #D6D4D4;	
 }
 
 
-/* FRACTION WIDTHS */
 
-.col-1-3-lg {
-	width: 66.13%; 
+/*-------- 5.2 - TEXT COLORS --------------------------------- */
+
+/*-------- 5.3 - SPACING ------------------------------------- */
+
+.p-t-sm {
+	padding-top: 10px;
+}
+.p-t-md {
+	padding-top: 20px;
+}
+.p-t-lg {
+	padding-top: 50px;
+}
+.p-b-lg {
+	padding-bottom: 50px;
+}
+.p-b-xl {
+	padding-bottom: 100px;
+}
+.m-b-lg {
+	margin-bottom: 50px;
+}
+.m-b-xl {
+	margin-bottom: 75px;
 }
 
-.col-1-4-lg {
-	width: 74.6%; 
+/*-------- 5.4 - ALIGNMENTS ---------------------------------- */
+
+.center-block {
+	float: none !important;
 }
 
-.col-1-5-sm {
-  	width: 39.04%;
+.float-rt {
+	float: right;
 }
 
-.col-1-5-lg {
-  	width: 59.36%; 
+.float-lft {
+	float: left;
 }
 
-.col-1-6-lg {
-  	width: 83.06%;
-}
 
-.col-1-7-sm {
-  	width: 27.42%;
-}
 
-.col-1-7-lg {
-  	width: 70.97%;
-}
-
-.col-1-8-sm {
-	width: 36.5%;
-}
-
-.col-1-8-lg {
-	width: 61.9%; 
-}
-
-.col-1-9-sm {
-	width: 43.55%; 
-}
-
-.col-1-9-lg {
-	width: 54.84%; 
-}
-
-.col-1-10-sm {
-	width: 28.88%;
-}
-
-.col-1-10-lg {
-	width: 69.52%; 
-}
-
-.col-1-11-lg {
-	width: 63.05%; 
-}
-
-.col-1-11-sm {
-	width: 35.34%; 
-}
-
-.col-1-12-sm {
-	width: 40.73%; 
-}
-
-.col-1-12-lg {
-	width: 57.66%; 
-}
-
+/* MEDIA QUERIES */
 
 @media (max-width: 768px) {
 	.wrapper {
@@ -175,23 +285,19 @@ img {
 	}
 	
 	.col-1-6-lg {
-		width: 66.13%; 
+		width: 66.66666666666666%; 
     }
 	
 	.col-1-6-sm {
-		width: 32.26%; 
+		width: 33.333%; 
 	}
 	
 	.col-1-4, .col-1-6, .col-1-8 {
-		width: 49.2%;
+		width: 50%;
 	}
 	
 	.col-1-5, .col-1-7, .col-1-9, .col-1-10, .col-1-11, .col-1-12 {
 		width: 100%;	
-	}
-	
-	.lft-mrgn-zero, .col-1-5, .col-1-7, .col-1-9, .col-1-10, .col-1-11, .col-1-12 {
-		margin-left: 0;		
 	}
 }
 
