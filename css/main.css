@@ -35,9 +35,22 @@
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
 
+.txt-cntr {
+	text-align: center;
+}
+
+
 /*-------- 1.1 - HEADINGS ------------------------------------ */
 
+h2, h3, h4, body > header > nav > div:first-child p {
+	font-family: 'Passion One', cursive;
+}
+
 /*-------- 1.2 - BODY ---------------------------------------- */
+
+body {
+    font: 400 .87em/1.6 'Forum', cursive;
+}
 
 /*-------- 1.3 - BUTTONS ------------------------------------- */
 
@@ -46,6 +59,11 @@
 -------------------------------------------------------------- */
 
 /*-------- 2.1 - MAIN MENU ----------------------------------- */
+
+body > header > nav > div:first-child p,
+body > header > nav > div:first-child header img {
+	text-transform: uppercase;
+}
 
 /*-------- 2.2 - FOOTER MENU --------------------------------- */
 
@@ -56,8 +74,7 @@
 /*-------- 3.1 - SITE STRUCTURE ------------------------------ */
 
 .wrapper {
-	width: 80%;
-	margin: 0 auto;
+	width: 75%;
 }
 
 .row:after {
@@ -72,8 +89,8 @@
 	padding-right: 10px;
 }
 
-[class*='col-']:first-of-type {
-	margin-left: 0;
+[class*='col-']:last-of-type {
+	padding-right: 0;
 } 
 
 /* WIDTHS */  
@@ -201,6 +218,10 @@
 
 /*-------- 3.3 - SECTION TWO --------------------------------- */
 
+#map {
+	height: 250px;
+}
+
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
@@ -227,6 +248,7 @@
 
 .row {
 	background-color: #6D6E70;	
+	overflow: auto;
 }
 
 body > header {
@@ -259,6 +281,18 @@ body > header {
 }
 .m-b-xl {
 	margin-bottom: 75px;
+}
+
+h1 {
+	margin: 0px 0px;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+body > header > nav > div:first-child {
+	padding: 0px 16.66%;
 }
 
 /*-------- 5.4 - ALIGNMENTS ---------------------------------- */
@@ -299,6 +333,11 @@ body > header {
 	.col-1-5, .col-1-7, .col-1-9, .col-1-10, .col-1-11, .col-1-12 {
 		width: 100%;	
 	}
+	
+	[class*='col-'] {
+		padding-right: 0px;	
+	}
+
 }
 
 
