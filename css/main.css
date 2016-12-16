@@ -8,6 +8,7 @@
 	1.1 - Headings
 	1.2 - Body Copy
 	1.3 - Buttons 
+	1.4 - Forms
 2.0 - Navigation Menus
 	3.1 - Main Menu
 	3.2 - Footer Menu
@@ -21,7 +22,7 @@
 	5.2 - Text Colors
 	5.3 - Text Sizes
 	5.4 - Alignments
---------------------------------------------------------------*/
+-------------------------------------------------------------- */
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -39,20 +40,37 @@
 	text-align: center;
 }
 
-
 /*-------- 1.1 - HEADINGS ------------------------------------ */
 
 h2, h3, h4, body > header > nav > div:first-child p {
 	font-family: 'Passion One', cursive;
 }
 
+h2 {
+	font: 700 2rem/2 'Passion One', cursive;
+}
+
 /*-------- 1.2 - BODY ---------------------------------------- */
 
 body {
-    font: 400 .87em/1.6 'Forum', cursive;
+    font: 400 1.4em/1.8 'Forum', cursive;
+}
+
+#cards .wrapper .row section div:last-child {
+	font: 400 .85em/1.6 'Forum', cursive;
 }
 
 /*-------- 1.3 - BUTTONS ------------------------------------- */
+
+.brdr-rt {
+	border-right: thin solid #fff;
+}
+
+/*-------- 1.3 - FORMS --------------------------------------- */
+
+form label {
+	display: none;
+}
 
 /*---------------------------------------------------------------
 2.0 - NAVIGATION MENU
@@ -60,9 +78,19 @@ body {
 
 /*-------- 2.1 - MAIN MENU ----------------------------------- */
 
+h2, 
 body > header > nav > div:first-child p,
 body > header > nav > div:first-child header img {
 	text-transform: uppercase;
+}
+
+body > header > nav > div:first-child p {
+	font: 700 .8rem/1 'Passion One', cursive;
+}
+
+body > header > nav > div:first-child p a {
+	color: white;
+	text-decoration: none;
 }
 
 /*-------- 2.2 - FOOTER MENU --------------------------------- */
@@ -92,6 +120,11 @@ body > header > nav > div:first-child header img {
 [class*='col-']:last-of-type {
 	padding-right: 0;
 } 
+
+img {
+	max-width: 100%;	
+}
+
 
 /* WIDTHS */  
 
@@ -242,17 +275,18 @@ body > header > nav > div:first-child header img {
 	height: 50px;
 }
 
-.wrapper {
-	background-color: #58595B;	
-}
 
 .row {
-	background-color: #6D6E70;	
 	overflow: auto;
 }
 
-body > header {
+body > header, #cards {
 	background-color: #D6D4D4;	
+}
+
+#cards .wrapper .row section div:last-child,
+#cards .wrapper .row section figure {
+	background-color: white;
 }
 
 
@@ -261,6 +295,9 @@ body > header {
 
 /*-------- 5.3 - SPACING ------------------------------------- */
 
+.flex {
+	display: flex;
+}
 .p-t-sm {
 	padding-top: 10px;
 }
@@ -291,8 +328,19 @@ h1 {
 	margin: 0 auto;
 }
 
-body > header > nav > div:first-child {
+body > header > nav > div:first-child,
+#contact-form .wrapper .row {
 	padding: 0px 16.66%;
+}
+
+.pad-sides {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#cards .wrapper .row section div:last-child {
+	padding-left: 20px;
+	padding-right: 10%;
 }
 
 /*-------- 5.4 - ALIGNMENTS ---------------------------------- */
@@ -307,6 +355,16 @@ body > header > nav > div:first-child {
 
 .float-lft {
 	float: left;
+}
+
+.align-btm {
+	display: block;
+    align-self: flex-end;
+	margin: 0px 0px;
+}
+
+.block {
+	display: block;
 }
 
 
@@ -330,12 +388,20 @@ body > header > nav > div:first-child {
 		width: 50%;
 	}
 	
-	.col-1-5, .col-1-7, .col-1-9, .col-1-10, .col-1-11, .col-1-12 {
+	.col-1-5, .col-1-7, .col-1-9-sm, .col-1-9-lg,
+	.col-1-10, .col-1-11, .col-1-12,
+	#contact-form .wrapper .row .col-1-2,
+	#products .wrapper .row .col-1-2,
+	#cards .wrapper .row .col-1-2 {
 		width: 100%;	
 	}
 	
 	[class*='col-'] {
 		padding-right: 0px;	
+	}
+	
+	.flex {
+		display: block;
 	}
 
 }

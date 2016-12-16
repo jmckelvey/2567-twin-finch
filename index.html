@@ -17,45 +17,44 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-
-
 <link href="https://fonts.googleapis.com/css?family=Forum|Passion+One:400,700,900" rel="stylesheet">
-<title>Untitled Document</title>
+
+<title>Assignment 5</title>
 </head>
 
 <body>
 
 <!-- Hero Section -->
 <header>    
-	<nav class="wrapper">
+	<nav class="wrapper p-t-md">
 		<div class="row">
-			<p class="col-1-5 txt-cntr"><a href="#">Home</a></p>
+			<p class="col-1-5 txt-cntr brdr-rt"><a href="#">Home</a></p>
 			<p class="col-1-5 txt-cntr"><a href="#about">About</a></p>
 			<h1>
 				<a href="#" class="col-1-5"><img src="img/logo.png" alt="Twin Finch Roastery logo"></a>
 			</h1>
-			<p class="col-1-5 txt-cntr"><a href="#products">Products</a></p>
+			<p class="col-1-5 txt-cntr brdr-rt"><a href="#products">Products</a></p>
 			<p class="col-1-5 txt-cntr"><a href="contact">Contact</a></p>
 		</div>
-		<div class="txt-cntr">
+		<div class="txt-cntr p-t-lg p-b-lg">
 			<p>an authentic micro-roastery</p>
 			<p>small, dedicated, and highly focused on quality</p>
-			<p class="txt-cntr"><a href="#contact">contact us</a><a href="#products">our roasts</a></p>
+			<p class="txt-cntr p-t-lg"><a href="#contact">contact us</a><a href="#products">our roasts</a></p>
 		</div>
 	</nav>
 </header>
 
 <!-- Featured Product Section -->
 <section id="products">    
-	<div class="wrapper">
-		<header class="txt-cntr">
+	<div class="wrapper p-t-lg p-b-lg">
+		<header class="txt-cntr p-b-lg pad-sides">
 			<h2>Our Roasts</h2>
 			<p>We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
 		</header>
 		<div class="row">
-			<div class="col-1-2">
-				<div class="gray"><img src="img/finch-bag-lg.png" alt="One pound bag of coffee beans from Twin Finch"></div>
-			</div>
+			<figure class="col-1-2">
+				<img src="img/finch-bag-lg.jpg" alt="One pound bag of coffee beans from Twin Finch">
+			</figure>
 			<section class="col-1-2">
 				<header>
 					<h3>Finch House Blend</h3>
@@ -63,12 +62,12 @@
 				<p>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.”</p>
 				<p><a href="#">Read the review</a></p>
 				<div class="row">
-					<div>
+					<div class="col-1-2">
 						<p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes</p>
 					</div>
-					<div>
+					<div class="col-1-2 float-rt">
 						<p>mr | $17.95</p>
-						<p><a href="#"></a></p>
+						<p><a href="#">Buy now</a></p>
 					</div>
 				</div>
 			</section>
@@ -77,57 +76,57 @@
 </section>
 
 <!-- Products --> 
-<section>    
+<section id="cards">    
 	<div class="wrapper">
-		<div class="row">
-			<section class="col-1-2 row">
-				<div class="gray col-1-9-sm">
-					<img src="img/finch-bag-sm.png" alt="One pound bag of coffee beans from Twin Finch">
-				</div>
+		<div class="row flex">
+			<section class="col-1-2 row flex">
+				<figure class="col-1-9-sm">
+					<img src="img/finch-bag-lg.jpg" alt="One pound bag of coffee beans from Twin Finch">
+				</figure>
 				<div class="col-1-9-lg">
 					<header>
 						<h4>Sunrise</h4>
 					</header>
 					<p>Light, fruity acidity which complements its fully nutty body and unique spicy tones. </p>
-					<p><a href="#">buy now</a></p>
+					<p>mr | $17.95<a href="#">buy now</a></p>
 				</div>
 			</section>
-			<section class="col-1-2 row">
-				<div class="gray col-1-9-sm">
-					<img src="img/finch-bag-sm.png" alt="One pound bag of coffee beans from Twin Finch">
-				</div>
+			<section class="col-1-2 row flex">
+				<figure class="col-1-9-sm">
+					<img src="img/finch-bag-lg.jpg" alt="One pound bag of coffee beans from Twin Finch">
+				</figure>
 				<div class="col-1-9-lg">
 					<header>
 						<h4>Midnight</h4>
 					</header>
 					<p>Roasted into second crack for a big, bold and dark cup. Beans display oil. </p>
-					<p><a href="#">buy now</a></p>
+					<p>mr | $17.95<a href="#">buy now</a></p>
 				</div>
 			</section>
 		</div>
-		<div class="row">
-			<section class="col-1-2 row">
-				<div class="gray col-1-9-sm">
-					<img src="img/finch-bag-sm.png" alt="One pound bag of coffee beans from Twin Finch">
-				</div>
+		<div class="row flex">
+			<section class="col-1-2 row flex">
+				<figure class="col-1-9-sm">
+					<img src="img/finch-bag-lg.jpg" alt="One pound bag of coffee beans from Twin Finch">
+				</figure>
 				<div class="col-1-9-lg">
 					<header>
 						<h4>Espresso</h4>
 					</header>
-					<p>Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>
-					<p><a href="#">buy now</a></p>
+					<p>Clean, a little roasty, sumptuous crema, unfussy, delicious.</p>						
+					<p>mr | $17.95<a href="#">buy now</a></p>
 				</div>
 			</section>
-			<section class="col-1-2 row">
-				<div class="gray col-1-9-sm">
-					<img src="img/finch-bag-sm.png" alt="One pound bag of coffee beans from Twin Finch">
-				</div>
+			<section class="col-1-2 row flex">
+				<figure class="col-1-9-sm">
+					<img src="img/finch-bag-lg.jpg" alt="One pound bag of coffee beans from Twin Finch">
+				</figure>
 				<div class="col-1-9-lg">
 					<header>
 						<h4>Evening Oak</h4>
 					</header>
 					<p>Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup. </p>
-					<p><a href="#">buy now</a></p>
+					<p>mr | $17.95<a href="#">buy now</a></p>
 				</div>
 			</section>
 		</div>
@@ -136,7 +135,7 @@
 
 <!-- About Section -->
 <section id="about">    
-	<div class="wrapper txt-cntr">
+	<div class="wrapper p-t-lg p-b-lg txt-cntr pad-sides">
 		<header>
 			<h2>Our Process</h2>
 		</header>
@@ -148,29 +147,35 @@
 
 <!-- Contact Us -->
 <section id="contact">    
-	<div class="wrapper txt-cntr">
+	<div class="wrapper p-t-lg p-b-xl txt-cntr">
 		<header>
 			<h2>Contact Us</h2>
 			<p>online or in person</p>
 		</header>
-		<p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
-		<p>You can buy from us directly at our Portland storefront located at 457 NW Market Street</p>
-		<div class="row">
+		<p class="pad-sides">Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
+		<p class="p-b-lg">You can buy from us directly at our Portland storefront located at 457 NW Market Street</p>
+		<div class="row p-t-lg">
 			<div class="col-1-3">
-				<img src="img/add-icon.png" alt="">
-				<div class="gray">
+				<figure class="col-1-6-sm">
+					<img src="img/phone-icon.png" alt="">
+				</figure>
+				<div class="col-1-6-lg">
 					<p>Address</p>
 				</div>
 			</div>
 			<div class="col-1-3">
-				<img src="img/mail-icon.png" alt="">
-				<div class="gray">
+				<figure class="col-1-6-sm">
+					<img src="img/mail-icon.png" alt="">
+				</figure>
+				<div class="col-1-6-lg">
 					<p>Email</p>
 				</div>
 			</div>
 			<div class="col-1-3">
-				<img src="img/phone-icon.png" alt="">
-				<div class="gray">
+				<figure class="col-1-6-sm">
+					<img src="img/phone-icon.png" alt="">
+				</figure>
+				<div class=" col-1-6-lg">
 					<p>Phone number</p>
 				</div>
 			</div>
@@ -178,42 +183,43 @@
 	</div>
 </section>
 
-
+<!-- Map -->
 <div id="map"></div>
 
-
+<!-- Contact Form -->
 <section id="contact-form">
-	<div class="wrapper">
+	<div class="wrapper p-t-lg p-b-lg">
 		<div class="row">            
 			<div class="col-1-2">
 				<form>
 					<label for="first-name">First Name</label>
-					<input type="text" id="first-name" name="name">
+					<input type="text" placeholder="FIRST NAME" id="first-name"  class="col-1-1" name="name">
 					<label for="last-name">Last Name</label>
-					<input type="text" id="last-name" name="name">
+					<input type="text" id="last-name" placeholder="LAST NAME" class="col-1-1" name="name">
 					<label for="email">Email Address</label>
-					<input type="email" id="email" name="email">
+					<input type="email" placeholder="EMAIL ADDRESS" id="email" class="col-1-1" name="email">
 				</form>
 			</div>
 			<div class="col-1-2">
 				<form action="">
 					<label for="message">Message</label>
-					<textarea  id="message" name="message"></textarea>
+					<textarea id="message" placeholder="MESSAGE" class="col-1-1" name="message"></textarea>
 				</form>
 			</div>
 		</div>
 	</div>
 </section>
 
+<!-- Footer to Website -->
 <footer>
-	<div class="wrapper">
+	<div class="wrapper p-t-lg">
 		<div class="row">
 			<div class="col-1-3">
 				<img src="img/logo.png" alt="">
 			</div>
 			<div class="col-1-3">
-				<p class="col-1-3"><a href="">Facebook</a></p>
-				<p class="col-1-3"><a href="">Twitter</a></p>
+				<p class="col-1-3 brdr-rt"><a href="">Facebook</a></p>
+				<p class="col-1-3 brdr-rt"><a href="">Twitter</a></p>
 				<p class="col-1-3"><a href="">Google+</a></p>
 			</div>
 			<div class="col-1-3 gray">
@@ -222,6 +228,8 @@
 	</div>	
 </footer>
 
+
+<!-- JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
 
 
