@@ -392,7 +392,7 @@ body > header > nav > div:first-child,
 	.col-1-10, .col-1-11, .col-1-12,
 	#contact-form .wrapper .row .col-1-2,
 	#products .wrapper .row .col-1-2,
-	#cards .wrapper .row .col-1-2 {
+	#cards .wrapper .row .col-1-2, .resize-sm {
 		width: 100%;	
 	}
 	
