@@ -40,14 +40,36 @@
 	text-align: center;
 }
 
+body > header > .wrapper > div p:first-child,
+body > header > .wrapper > div p:nth-child(2),
+.rel p:last-child a, #contact {
+	color: #FCFFF5;
+}
+
+#products h2, #about h2, h3, h4, .price {
+	color: #3E606F;
+}
+
 /*-------- 1.1 - HEADINGS ------------------------------------ */
 
-h2, h3, h4, body > header > nav > div:first-child p {
+h2, h3, h4, body > header > div nav p,
+body > header > .wrapper > div p:last-child a {
 	font-family: 'Passion One', cursive;
 }
 
 h2 {
-	font: 700 2rem/2 'Passion One', cursive;
+	font: 400 3.5rem/2 'Passion One', cursive;
+}
+
+h3 {
+	font: 100 2.5rem/1 'Passion One', cursive;
+	letter-spacing: 2px;
+}
+
+
+h4 {
+	font: 100 1.5rem/1 'Passion One', cursive;
+	letter-spacing: 2px;
 }
 
 /*-------- 1.2 - BODY ---------------------------------------- */
@@ -56,14 +78,54 @@ body {
     font: 400 1.4em/1.8 'Forum', cursive;
 }
 
+body > header > .wrapper > div p:first-child {
+	font: 400 5rem/1 'Passion One', cursive;
+	text-transform: uppercase;
+	margin: 300px 0px 0px 0px;
+}
+
+body > header > .wrapper > div p:nth-child(2) {
+	font: 400 2.5rem/1 'Forum', cursive;
+}
+
 #cards .wrapper .row section div:last-child {
 	font: 400 .85em/1.6 'Forum', cursive;
 }
+
 
 /*-------- 1.3 - BUTTONS ------------------------------------- */
 
 .brdr-rt {
 	border-right: thin solid #fff;
+}
+
+body > header > .wrapper > div p:last-child a {
+	margin: 20px 10px;
+	padding: 2px 45px;
+	border: thick solid #fff;
+	text-transform: uppercase;
+	text-decoration: none; 
+	display:inline-block;
+}
+
+.rel p:last-child a,
+#about .wrapper p a, form p a,
+#products .wrapper .row section p a {
+	margin: 20px 10px;
+	padding: 12px 35px;
+	background-color: #91AA9D;
+	text-transform: uppercase;
+	text-decoration: none; 
+	display:inline-block;
+}
+
+.rel p:last-child a:hover, #about .wrapper p a:hover,
+#products .wrapper .row section p a:hover, form p a:hover {
+	background-color: #D1DBBD;	
+}
+
+form p a {
+	margin-left: 0px;
 }
 
 /*-------- 1.3 - FORMS --------------------------------------- */
@@ -72,24 +134,36 @@ form label {
 	display: none;
 }
 
+textarea {
+	height: 153px;
+}
+
 /*---------------------------------------------------------------
 2.0 - NAVIGATION MENU
 -------------------------------------------------------------- */
 
 /*-------- 2.1 - MAIN MENU ----------------------------------- */
 
-h2, 
-body > header > nav > div:first-child p,
-body > header > nav > div:first-child header img {
+h2, h3, h4, form p a,
+body > header > div nav p, #pull-qt,
+body > header > div nav header img, .price,
+footer .wrapper .row div:nth-child(2) p {
 	text-transform: uppercase;
 }
 
-body > header > nav > div:first-child p {
-	font: 700 .8rem/1 'Passion One', cursive;
+body > header > div nav p, #pull-qt, .price, 
+.rel p:last-child a, #about .wrapper p a,
+#products .wrapper .row section p a, form p a, 
+footer .wrapper .row div:nth-child(2) p {
+	font: 100 1.1rem/1.4 'Passion One', cursive;
+	letter-spacing: 2px;
 }
 
-body > header > nav > div:first-child p a {
-	color: white;
+body > header > div nav p a, #about .wrapper p a,
+body > header > .wrapper > div p:last-child a,
+#products .wrapper .row section p a, form p a,
+footer .wrapper .row div:nth-child(2) p a {
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -121,7 +195,7 @@ body > header > nav > div:first-child p a {
 	padding-right: 0;
 } 
 
-img {
+img, rel p:last-child {
 	max-width: 100%;	
 }
 
@@ -249,15 +323,55 @@ img {
 
 /*-------- 3.2 - SECTION ONE --------------------------------- */
 
+#products .wrapper .row section .row div:last-child p,
+.txt-rt {
+	text-align: right;
+}
+
+#products > .wrapper > .row > section {
+	border: thick solid #D1DBBD ;
+	padding: 40px 80px 40px 20px;
+}
+
+#pull-qt {
+	color: #91AA9D;
+}
+
 /*-------- 3.3 - SECTION TWO --------------------------------- */
 
 #map {
 	height: 250px;
 }
 
+#contact-form .wrapper .row div:first-child form {
+	margin-right: 25px;
+}
+
+/*-------- 3.3 - FOOTER SECTION ------------------------------ */
+
+footer .wrapper .row div:first-child img {
+	padding: 0 60% 35px 0px;
+}
+
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
+
+body > header { 
+  background: url(../img/hero-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#cards, #contact {
+  background: url(../img/beans-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /*--------------------------------------------------------------
 5.0 - UTILITY
@@ -275,6 +389,9 @@ img {
 	height: 50px;
 }
 
+.bg-lt {
+	background-color: #FCFFF5;
+}
 
 .row {
 	overflow: auto;
@@ -284,12 +401,9 @@ body > header, #cards {
 	background-color: #D6D4D4;	
 }
 
-#cards .wrapper .row section div:last-child,
-#cards .wrapper .row section figure {
-	background-color: white;
+footer {
+	background-color: #3E606F;
 }
-
-
 
 /*-------- 5.2 - TEXT COLORS --------------------------------- */
 
@@ -313,6 +427,12 @@ body > header, #cards {
 .p-b-xl {
 	padding-bottom: 100px;
 }
+.m-t-sm {
+	margin-top: 25px;
+}
+.m-t-lg {
+	margin-top: 75px;
+}
 .m-b-lg {
 	margin-bottom: 50px;
 }
@@ -320,7 +440,28 @@ body > header, #cards {
 	margin-bottom: 75px;
 }
 
-h1 {
+#contact-form .wrapper {
+	padding-top: 100px;
+}
+
+#cards .wrapper .row section:nth-child(odd) {
+	margin-right: 15px;
+}
+
+#cards .wrapper .row section:nth-child(even) {
+	margin-left: 15px;
+}
+
+#cards .wrapper .row:first-child section:first-child,
+#cards .wrapper .row:first-child section:nth-child(2) {
+	margin-bottom: 30px;
+}
+
+#cards .wrapper {
+	padding: 100px 0px 50px 0px;
+}
+
+h1, form p {
 	margin: 0px 0px;
 }
 
@@ -328,19 +469,35 @@ h1 {
 	margin: 0 auto;
 }
 
-body > header > nav > div:first-child,
+body > header > div nav h1 img {
+	padding-right: 15px;
+}
+
+body > header > div nav,
 #contact-form .wrapper .row {
 	padding: 0px 16.66%;
 }
 
 .pad-sides {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 12%;
+	padding-right: 12%;
 }
 
 #cards .wrapper .row section div:last-child {
 	padding-left: 20px;
 	padding-right: 10%;
+}
+
+footer .wrapper .row div:nth-child(2) {
+	padding-top: 55px;
+}
+
+footer .wrapper .row div:last-child p {
+	margin: 0px 0px 10px 0px;
+}
+
+footer .wrapper .row div:last-child {
+	padding-left:  12%
 }
 
 /*-------- 5.4 - ALIGNMENTS ---------------------------------- */
@@ -357,16 +514,28 @@ body > header > nav > div:first-child,
 	float: left;
 }
 
-.align-btm {
-	display: block;
-    align-self: flex-end;
-	margin: 0px 0px;
-}
-
 .block {
 	display: block;
 }
 
+.rel {
+	position: relative;
+}
+
+.rel p:last-child {
+	padding-right: 25px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.rel p:last-child a {
+	
+}
+
+.rel  {
+	padding-bottom: 75px;
+}
 
 
 /* MEDIA QUERIES */
@@ -391,19 +560,114 @@ body > header > nav > div:first-child,
 	.col-1-5, .col-1-7, .col-1-9-sm, .col-1-9-lg,
 	.col-1-10, .col-1-11, .col-1-12,
 	#contact-form .wrapper .row .col-1-2,
-	#products .wrapper .row .col-1-2,
+	#products > .wrapper > .row > section .col-1-2,
 	#cards .wrapper .row .col-1-2, .resize-sm {
-		width: 100%;	
+		width: 100% !important;	
 	}
 	
 	[class*='col-'] {
 		padding-right: 0px;	
 	}
 	
+	body {
+		font: 400 1.15em/1.4 'Forum', cursive;
+		text-align: center
+	}
+	
+	h2, h3 {
+		font-size: 2rem;
+	}
+	
+	body > header > .wrapper > div p:first-child {
+	font: 400 2.2rem/1 'Passion One', cursive;
+	text-transform: uppercase;
+	margin: 30px 0px 0px 0px;
+	}
+
+	
+	body header .wrapper div p:nth-child(2) {
+		font-size: 1.3em;
+	}
+	
+	body > header > div nav p {
+		margin: 10px;
+	}
+	
 	.flex {
 		display: block;
 	}
+	
+	footer .wrapper .row div:first-child img {
+		padding: 0 30%;
+	}
+	
+	#products > .wrapper > .row > section {
+		border: none ;
+		padding: 0px;
+	}
 
+	
+	#cards .wrapper .row section:nth-child(odd) {
+		margin-right: 0px;
+	}
+
+	#cards .wrapper .row section:nth-child(even) {
+		margin-left: 0px;
+	}
+	
+	body > header > .wrapper nav .m-t-lg {
+		margin: 7px;
+	}
+	
+	body > header > .wrapper nav p:first-child {
+		margin-top: 250px;
+	}
+	
+	body > header > .wrapper nav .brdr-rt {
+		border-right: none;
+	}
+	
+	.rel p:last-child {
+		padding-right: 0px;
+		position: static;
+	}
+	
+	.pad-sides {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	
+	#cards .wrapper .row section div:last-child {
+		padding-left: 0px;
+		padding-right: 0px;;
+	}
+	
+	.z-indx {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+	}
+	
+	#sm-size {
+		padding: 10px 75px;
+	}
+	
+	body > header > .wrapper {
+		padding: 10px
+	}
+
+	footer .wrapper .row div:last-child {
+		padding-left: 0px;
+	}
+	
+	#contact-form .wrapper .row div:first-child form {
+		margin-right: 0px;
+}
+
+	#contact .wrapper .row div figure {
+		padding-left: 25%;
+	}
 }
 
 
