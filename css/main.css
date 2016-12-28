@@ -46,7 +46,8 @@ body > header > .wrapper > div p:nth-child(2),
 	color: #FCFFF5;
 }
 
-#products h2, #about h2, h3, h4, .price {
+#products h2, #about h2, h3, h4, .price, 
+body > header > .wrapper > div p:last-child a:hover {
 	color: #3E606F;
 }
 
@@ -108,6 +109,12 @@ body > header > .wrapper > div p:last-child a {
 	display:inline-block;
 }
 
+body > header > .wrapper > div p:last-child a:hover {
+	border: thick solid #D1DBBD;
+	background-color: #D1DBBD;
+}
+
+
 .rel p:last-child a,
 #about .wrapper p a, form p a,
 #products .wrapper .row section p a {
@@ -165,6 +172,11 @@ body > header > .wrapper > div p:last-child a,
 footer .wrapper .row div:nth-child(2) p a {
 	color: #fff;
 	text-decoration: none;
+}
+
+body > header > div nav p a:hover,
+footer .wrapper .row div:nth-child(2) p a:hover {
+	color: #D1DBBD;
 }
 
 /*-------- 2.2 - FOOTER MENU --------------------------------- */
