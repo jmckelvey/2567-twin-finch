@@ -32,21 +32,15 @@
 	box-sizing: border-box;	
 }
 
-/*---------------------------------------------------------------
-1.0 - TYPOGRAPHY
--------------------------------------------------------------- */
-
-.txt-cntr {
-	text-align: center;
-}
-
 body > header > .wrapper > div p:first-child,
 body > header > .wrapper > div p:nth-child(2),
-.rel p:last-child a, #contact {
+.rel p:last-child a, #contact,
+footer > .wrapper > .row > div:last-child p {
 	color: #FCFFF5;
 }
 
 #products h2, #about h2, h3, h4, .price, 
+#products .wrapper .row section .row div:last-child p, 
 body > header > .wrapper > div p:last-child a:hover {
 	color: #3E606F;
 }
@@ -62,27 +56,32 @@ h2 {
 	font: 400 3.5rem/2 'Passion One', cursive;
 }
 
-h3 {
-	font: 100 2.5rem/1 'Passion One', cursive;
-	letter-spacing: 2px;
+#products > .wrapper > .row > section > div:last-child h3 {
+	font-size: 2.5rem;
 }
 
 
-h4 {
-	font: 100 1.5rem/1 'Passion One', cursive;
+h3 {
+	font: 100 1.2em/1 'Passion One', cursive;
 	letter-spacing: 2px;
+	padding-top: 15px;
 }
 
 /*-------- 1.2 - BODY ---------------------------------------- */
 
 body {
-    font: 400 1.4em/1.8 'Forum', cursive;
+    font: 400 1.2em/1.8 'Forum', cursive;
 }
 
 body > header > .wrapper > div p:first-child {
 	font: 400 5rem/1 'Passion One', cursive;
 	text-transform: uppercase;
 	margin: 300px 0px 0px 0px;
+}
+
+.cont-txt {
+	padding-left: 20px;
+	text-align: left;
 }
 
 body > header > .wrapper > div p:nth-child(2) {
@@ -101,12 +100,8 @@ body > header > .wrapper > div p:nth-child(2) {
 }
 
 body > header > .wrapper > div p:last-child a {
-	margin: 20px 10px;
-	padding: 2px 45px;
 	border: thick solid #fff;
-	text-transform: uppercase;
-	text-decoration: none; 
-	display:inline-block;
+
 }
 
 body > header > .wrapper > div p:last-child a:hover {
@@ -114,13 +109,18 @@ body > header > .wrapper > div p:last-child a:hover {
 	background-color: #D1DBBD;
 }
 
-
 .rel p:last-child a,
 #about .wrapper p a, form p a,
 #products .wrapper .row section p a {
-	margin: 20px 10px;
-	padding: 12px 35px;
 	background-color: #91AA9D;
+}
+
+.rel p:last-child a,
+#about .wrapper p a, form p a,
+#products .wrapper .row section p a,
+body > header > .wrapper > div p:last-child a {
+	margin: 20px 10px;
+	padding: 4px 25px;
 	text-transform: uppercase;
 	text-decoration: none; 
 	display:inline-block;
@@ -151,31 +151,37 @@ textarea {
 
 /*-------- 2.1 - MAIN MENU ----------------------------------- */
 
-h2, h3, h4, form p a,
-body > header > div nav p, #pull-qt,
-body > header > div nav header img, .price,
-footer .wrapper .row div:nth-child(2) p {
+h2, h3, h4, form p a, nav li, #pull-qt, .price,
+footer .wrapper .row div:nth-child(2) li, .cont-txt,
+#products .wrapper .row section .row div:last-child p, 
+footer > .wrapper > .row > div:last-child p {
 	text-transform: uppercase;
 }
 
-body > header > div nav p, #pull-qt, .price, 
+nav li, #pull-qt, .price, 
 .rel p:last-child a, #about .wrapper p a,
 #products .wrapper .row section p a, form p a, 
-footer .wrapper .row div:nth-child(2) p {
+footer .wrapper .row div:nth-child(2) li, .cont-txt,
+#products .wrapper .row section .row div:last-child p:first-child,
+footer > .wrapper > .row > div:last-child p {
 	font: 100 1.1rem/1.4 'Passion One', cursive;
 	letter-spacing: 2px;
 }
 
-body > header > div nav p a, #about .wrapper p a,
-body > header > .wrapper > div p:last-child a,
+nav li a, #about .wrapper p a, #contact .row div a,
+header > .wrapper > div p:last-child a,
 #products .wrapper .row section p a, form p a,
-footer .wrapper .row div:nth-child(2) p a {
+footer .wrapper .row div:nth-child(2) li a {
 	color: #fff;
 	text-decoration: none;
 }
 
-body > header > div nav p a:hover,
-footer .wrapper .row div:nth-child(2) p a:hover {
+footer .wrapper .row div:nth-child(2) li, nav li {
+	list-style: none;
+}
+
+header > div nav li a:hover, #contact .row div a:hover,
+footer .wrapper .row div:nth-child(2) li a:hover {
 	color: #D1DBBD;
 }
 
@@ -207,7 +213,7 @@ footer .wrapper .row div:nth-child(2) p a:hover {
 	padding-right: 0;
 } 
 
-img, rel p:last-child {
+img, .rel p:last-child {
 	max-width: 100%;	
 }
 
@@ -226,42 +232,13 @@ img, rel p:last-child {
 	width: 33.33%; 
 }
 
-.col-1-4, .col-1-4-sm {
-	width: 25%; 
-}
-
 .col-1-5 {
   	width: 20%;
 }
 
-.col-1-6, .col-1-6-sm {
+.col-1-6-sm {
   	width: 16.666666666666666667%;
 }
-
-.col-1-7 {
-  	width: 14.28%;
-}
-
-.col-1-8 {
-	width: 12.5%; 
-}
-
-.col-1-9 {
-	width: 11.1%; 
-}
-
-.col-1-10 {
-	width: 10%;
-}
-
-.col-1-11 {
-	width: 9.09%; 
-}
-
-.col-1-12 {
-	width: 8.33%; 
-}
-
 
 /* FRACTION WIDTHS */
 
@@ -269,36 +246,8 @@ img, rel p:last-child {
 	width: 66.666666666666666667%; 
 }
 
-.col-1-4-lg {
-	width: 75%; 
-}
-
-.col-1-5-sm {
-  	width: 40%;
-}
-
-.col-1-5-lg {
-  	width: 60%; 
-}
-
 .col-1-6-lg {
   	width: 83.3333333333333333333%;
-}
-
-.col-1-7-sm {
-  	width: 28.56%;
-}
-
-.col-1-7-lg {
-  	width: 71.4%;
-}
-
-.col-1-8-sm {
-	width: 37.5%;
-}
-
-.col-1-8-lg {
-	width: 62.5%; 
 }
 
 .col-1-9-sm {
@@ -309,29 +258,6 @@ img, rel p:last-child {
 	width: 55.5%; 
 }
 
-.col-1-10-sm {
-	width: 30%;
-}
-
-.col-1-10-lg {
-	width: 70%; 
-}
-
-.col-1-11-lg {
-	width: 63.63%; 
-}
-
-.col-1-11-sm {
-	width: 36.36%; 
-}
-
-.col-1-12-sm {
-	width: 41.65%; 
-}
-
-.col-1-12-lg {
-	width: 58.31%; 
-}
 
 /*-------- 3.2 - SECTION ONE --------------------------------- */
 
@@ -361,10 +287,6 @@ img, rel p:last-child {
 
 /*-------- 3.3 - FOOTER SECTION ------------------------------ */
 
-footer .wrapper .row div:first-child img {
-	padding: 0 60% 35px 0px;
-}
-
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
@@ -391,14 +313,8 @@ body > header {
 
 /*-------- 5.1 - BACKGROUND COLORS --------------------------- */
 
-.gray {
-	background-color: #ccc;	
-	height: 50px;
-}
-
-.drk-gray {
-	background-color: #4c4c4c;	
-	height: 50px;
+.txt-cntr {
+	text-align: center;
 }
 
 .bg-lt {
@@ -473,11 +389,19 @@ footer {
 	padding: 100px 0px 50px 0px;
 }
 
+nav, nav ul {
+	padding-left: 0px;
+}
+
+nav ul h1 img {
+	padding-right:  0px;
+}
+
 h1, form p {
 	margin: 0px 0px;
 }
 
-.wrapper {
+.wrapper, nav h1  {
 	margin: 0 auto;
 }
 
@@ -487,7 +411,6 @@ body > header > div nav h1 img {
 
 body > header > div nav,
 #contact-form .wrapper .row {
-	padding: 0px 16.66%;
 }
 
 .pad-sides {
@@ -501,7 +424,7 @@ body > header > div nav,
 }
 
 footer .wrapper .row div:nth-child(2) {
-	padding-top: 55px;
+	padding-top: 35px;
 }
 
 footer .wrapper .row div:last-child p {
@@ -541,67 +464,122 @@ footer .wrapper .row div:last-child {
 	right: 0;
 }
 
-.rel p:last-child a {
-	
-}
-
-.rel  {
-	padding-bottom: 75px;
+.rel {
+	padding-bottom: 85px;
 }
 
 
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
+	
+	/*----------------------------------------------------------
+	1.0 - WIDTHS
+	--------------------------------------------------------- */
+	nav
+
 	.wrapper {
-		width: 85%;	
+		width: 90%;	
 	}
 	
 	.col-1-6-lg {
 		width: 66.66666666666666%; 
     }
 	
+	.col-1-5 {
+		width: 50%;
+	}
+	
 	.col-1-6-sm {
-		width: 33.333%; 
+		width: 20%; 
 	}
 	
 	.col-1-4, .col-1-6, .col-1-8 {
 		width: 50%;
 	}
 	
-	.col-1-5, .col-1-7, .col-1-9-sm, .col-1-9-lg,
+	nav .col-1-7, .col-1-9-sm, .col-1-9-lg,
 	.col-1-10, .col-1-11, .col-1-12,
 	#contact-form .wrapper .row .col-1-2,
-	#products > .wrapper > .row > section .col-1-2,
-	#cards .wrapper .row .col-1-2, .resize-sm {
+	.col-1-2,
+	#cards .wrapper .row .col-1-2, .resize-sm, nav {
 		width: 100% !important;	
 	}
+	
+	/*----------------------------------------------------------
+	1.0 - TYPOGRAPHY
+	--------------------------------------------------------- */
 	
 	[class*='col-'] {
 		padding-right: 0px;	
 	}
 	
-	body {
-		font: 400 1.15em/1.4 'Forum', cursive;
-		text-align: center
+	body > header > div nav,
+	footer ul {
+		padding-left: 0px;
 	}
 	
-	h2, h3 {
+	body, .sm-cntr {
+		font: 400 1em/1.4 'Forum', cursive;
+	}
+	
+	#products .wrapper .row section .row div:last-child p,
+	body, .sm-cntr {
+		text-align: center;
+	}
+	
+	.cont-txt {
+		font-size: .7em;
+	}
+	
+	h2, #products > .wrapper > .row > section div:last-child h3 {
 		font-size: 2rem;
 	}
+	
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	nav li {
+		font-size: .8em;
+	}
+
+	body > header > .wrapper > div p:last-child a {
+	font-size: .8em;
+	margin: 5px 2px;
+	padding: 2px 8px;
+	border: thin solid #fff;
+	text-transform: uppercase;
+	text-decoration: none; 
+	display:inline-block;
+	}
+	
+	body > header > .wrapper > div p:last-child a:hover {
+	border: thin solid #D1DBBD;
+	background-color: #D1DBBD;
+	}
+
+
 	
 	body > header > .wrapper > div p:first-child {
 	font: 400 2.2rem/1 'Passion One', cursive;
 	text-transform: uppercase;
 	margin: 30px 0px 0px 0px;
 	}
-
-	
+		
 	body header .wrapper div p:nth-child(2) {
 		font-size: 1.3em;
 	}
 	
-	body > header > div nav p {
+	footer .wrapper .row div:nth-child(2) li {
+		font-size: .8em;
+	}
+
+	/*----------------------------------------------------------
+	1.0 - SPACING
+	--------------------------------------------------------- */
+	
+	body > header > div nav li {
 		margin: 10px;
 	}
 	
@@ -609,15 +587,22 @@ footer .wrapper .row div:last-child {
 		display: block;
 	}
 	
-	footer .wrapper .row div:first-child img {
-		padding: 0 30%;
+	header > .wrapper > div {
+		padding-bottom: 25px;
 	}
 	
+	nav ul {
+		margin-bottom: 50px;
+	}
+	
+	blockquote, nav ul {
+		margin: 0 auto;
+	}
+
 	#products > .wrapper > .row > section {
 		border: none ;
 		padding: 0px;
 	}
-
 	
 	#cards .wrapper .row section:nth-child(odd) {
 		margin-right: 0px;
@@ -627,12 +612,16 @@ footer .wrapper .row div:last-child {
 		margin-left: 0px;
 	}
 	
-	body > header > .wrapper nav .m-t-lg {
-		margin: 7px;
+	#cards section {
+		padding: 20px 20px 0px;
 	}
 	
-	body > header > .wrapper nav p:first-child {
-		margin-top: 250px;
+	body > header > .wrapper nav .m-t-lg {
+		margin: 7px 0px;
+	}
+	
+	body > header > .wrapper nav ul {
+		margin-top: 150px;
 	}
 	
 	body > header > .wrapper nav .brdr-rt {
@@ -642,6 +631,10 @@ footer .wrapper .row div:last-child {
 	.rel p:last-child {
 		padding-right: 0px;
 		position: static;
+	}
+	
+	.rel {
+		padding-bottom: 10px;
 	}
 	
 	.pad-sides {
@@ -661,8 +654,8 @@ footer .wrapper .row div:last-child {
 		z-index: 1000;
 	}
 	
-	#sm-size {
-		padding: 10px 75px;
+	h1 img {
+		padding: 10px;
 	}
 	
 	body > header > .wrapper {
