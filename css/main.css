@@ -486,7 +486,7 @@ footer .wrapper .row div:last-child {
 		width: 66.66666666666666%; 
     }
 	
-	.col-1-5 {
+	.col-1-5, .sm-fifty {
 		width: 50%;
 	}
 	
